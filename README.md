@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💎 TwinsShards (MagneticKristal)
+# 💎 TwinsShards
 
 **Gelişmiş, Yüksek Performanslı ve Folia Destekli Kristal/Shard Ekonomi Eklentisi**  
 *Advanced, High-Performance & Folia-Supported Crystal/Shard Economy Plugin*
