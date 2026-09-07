@@ -50,7 +50,6 @@ Ana komut: `/kristal` *(Alternatifler: `/crystal`, `/cr`, `/shards`, `/shard`, `
 | `/kristal sifirla <oyuncu>` | Belirtilen oyuncunun kristalini sıfırlar | `twinsshards.admin.reset` |
 | `/kristal yenile` | Yapılandırma ve dil dosyalarını yeniden yükler | `twinsshards.admin.reload` |
 
-*(Not: Eski `magnetickristal.*` yetkileri geriye dönük uyumluluk için desteklenmektedir).*
 
 ---
 
