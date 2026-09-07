@@ -94,9 +94,13 @@ public class ConfigManager {
         return defaultLanguage;
     }
 
-    public String getPrefix(String lang) {
+    public String getRawPrefix(String lang) {
         FileConfiguration msgs = getMessages(lang);
-        return ColorUtil.color(msgs.getString("prefix", "&#00c6ff&lTwinsShards &8» &r"));
+        return msgs.getString("prefix", "<gradient:#FF512F:#DD2476><b>TwinsShards</b></gradient> <dark_gray>»</dark_gray> ");
+    }
+
+    public String getPrefix(String lang) {
+        return ColorUtil.color(getRawPrefix(lang));
     }
 
     public String getMessage(String path, String lang) {
@@ -105,7 +109,7 @@ public class ConfigManager {
         if (msg == null) {
             return "§cMissing message: " + path;
         }
-        msg = msg.replace("%prefix%", getPrefix(lang));
+        msg = msg.replace("%prefix%", getRawPrefix(lang));
         return ColorUtil.color(msg);
     }
 
@@ -120,9 +124,9 @@ public class ConfigManager {
             return Collections.emptyList();
         }
         List<String> colored = new ArrayList<>(list.size());
-        String prefix = getPrefix(lang);
+        String rawPrefix = getRawPrefix(lang);
         for (String line : list) {
-            line = line.replace("%prefix%", prefix);
+            line = line.replace("%prefix%", rawPrefix);
             colored.add(ColorUtil.color(line));
         }
         return colored;

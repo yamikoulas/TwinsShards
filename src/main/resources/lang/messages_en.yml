@@ -3,7 +3,7 @@
 #   Color codes (&a, &b, etc.) and Hex colors (&#3a7bd5) supported.
 # =======================================================
 
-prefix: "&#00c6ff&lT&#0072ff&lw&#00c6ff&li&#0072ff&ln&#00c6ff&ls&#0072ff&lS&#00c6ff&lh&#0072ff&la&#00c6ff&lr&#0072ff&ld&#00c6ff&ls &8» &r"
+prefix: "<gradient:#FF512F:#DD2476><b>TwinsShards</b></gradient> <dark_gray>»</dark_gray> "
 
 no-permission: "%prefix%&cYou do not have permission to execute this command!"
 player-only: "%prefix%&cThis command can only be executed by players!"

@@ -3,7 +3,7 @@
 #   Renk kodları (&a, &b, vb.) ve Hex renkler (&#3a7bd5) desteklenir.
 # =======================================================
 
-prefix: "&#00c6ff&lT&#0072ff&lw&#00c6ff&li&#0072ff&ln&#00c6ff&ls&#0072ff&lS&#00c6ff&lh&#0072ff&la&#00c6ff&lr&#0072ff&ld&#00c6ff&ls &8» &r"
+prefix: "<gradient:#FF512F:#DD2476><b>TwinsShards</b></gradient> <dark_gray>»</dark_gray> "
 
 no-permission: "%prefix%&cBu komutu kullanmak için yetkiniz bulunmuyor!"
 player-only: "%prefix%&cBu komut sadece oyuncular tarafından kullanılabilir!"

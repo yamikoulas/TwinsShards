@@ -29,6 +29,7 @@
 - 🏆 **Asenkron Sıralama (Top 10):** Sunucu ana iş parçacığını yormadan periyodik güncellenen liderlik tablosu.
 - 🔢 **Sayı Kısaltmaları:** Büyük sayılar için dinamik ve ayarlanabilir biçimlendirme (`1.5K`, `2.3M`, `4.8B` vb.).
 - 🔌 **PlaceholderAPI Entegrasyonu:** Skor tabloları, tab listeleri ve hologramlar için zengin placeholder desteği.
+- 🎨 **Modern Renk & Biçimlendirme:** MiniMessage (`<gradient>`, `<b>`, vb.), Hex (`&#RRGGBB`) ve klasik (`&a`) renk desteği ile modern prefix/mesajlar.
 - 🛠️ **Geliştirici API'si:** Diğer eklentilerin kristal bakiyelerine doğrudan erişip işlem yapabileceği `ShardsAPI`.
 
 ---
@@ -104,6 +105,7 @@ ShardsAPI.giveBalance(player, 250.0);
 - 🏆 **Async Leaderboards (Top 10):** Cached leaderboards that update without causing TPS drops.
 - 🔢 **Custom Number Suffixes:** Configurable suffix formatting (`K`, `M`, `B`, `T`, etc.).
 - 🔌 **PlaceholderAPI Hook:** Seamless integration with scoreboards, tab lists, menus, and holograms.
+- 🎨 **Modern Colors & Formatting:** Full support for MiniMessage (`<gradient>`, `<b>`, etc.), Hex (`&#RRGGBB`), and legacy (`&a`) color codes.
 - 🛠️ **Lightweight Developer API:** Simple static `ShardsAPI` for easy plugin hooking.
 
 ---
