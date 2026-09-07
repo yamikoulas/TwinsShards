@@ -1,0 +1,56 @@
+# =======================================================
+#                 TwinsShards Configuration
+# =======================================================
+
+# Dil / Language
+# Desteklenen diller / Supported languages: 'tr', 'en'
+# Dosyalar / Files: plugins/TwinsShards/lang/messages_tr.yml veya messages_en.yml
+language: "tr"
+
+# Veritabanı Ayarları / Database Settings
+# 'sqlite' (varsayılan / default) veya 'mysql'
+database:
+  type: "sqlite"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "minecraft"
+    username: "root"
+    password: ""
+    ssl: false
+    pool-size: 10
+    timeout: 5000
+
+# Yeni oyuncunun başlayacağı varsayılan kristal miktarı / Default balance for new players
+default-balance: 0.0
+
+# Sıralama (Top Listesi) Ayarları / Leaderboard Settings
+top:
+  # Sıralamanın kaç saniyede bir veritabanından asenkron güncelleneceği
+  update-interval-seconds: 60
+  # Gösterilecek maksimum oyuncu sayısı
+  limit: 10
+  # %twinsshards_top_<sıra>% placeholder formatı
+  placeholder-format: "&e%pos%. &f%player% &8» &b%balance_formatted% &7Shards"
+  # Sıralamada oyuncu yoksa gösterilecek metin
+  empty-slot: "&7---"
+
+# Sayı Biçimlendirme (Kısaltma Birimleri) / Number Suffixes
+formatting:
+  decimal-places: 2
+  suffixes:
+    - ""
+    - "K"
+    - "M"
+    - "B"
+    - "T"
+    - "Q"
+    - "Qi"
+    - "Sx"
+    - "Sp"
+    - "O"
+    - "N"
+    - "D"
+
+# Otomatik Veri Kaydetme Süresi (Saniye) / Auto Save Interval (Seconds)
+auto-save-interval-seconds: 300

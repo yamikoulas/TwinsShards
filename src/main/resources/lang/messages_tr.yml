@@ -1,0 +1,67 @@
+# =======================================================
+#               TwinsShards Türkçe Mesaj Dosyası
+#   Renk kodları (&a, &b, vb.) ve Hex renkler (&#3a7bd5) desteklenir.
+# =======================================================
+
+prefix: "&#00c6ff&lT&#0072ff&lw&#00c6ff&li&#0072ff&ln&#00c6ff&ls&#0072ff&lS&#00c6ff&lh&#0072ff&la&#00c6ff&lr&#0072ff&ld&#00c6ff&ls &8» &r"
+
+no-permission: "%prefix%&cBu komutu kullanmak için yetkiniz bulunmuyor!"
+player-only: "%prefix%&cBu komut sadece oyuncular tarafından kullanılabilir!"
+player-not-found: "%prefix%&cBelirtilen oyuncu (&e%player%&c) bulunamadı!"
+invalid-amount: "%prefix%&cGeçersiz miktar girdiniz! Pozitif bir sayı yazmalısınız."
+
+# Bakiye
+balance-self: "%prefix%&7Mevcut Kristal Bakiyeniz: &#00d2ff&l%balance_formatted% &7(&b%balance_commas%&7)"
+balance-other: "%prefix%&e%player% &7adlı oyuncunun bakiyesi: &#00d2ff&l%balance_formatted% &7(&b%balance_commas%&7)"
+
+# Transfer (Pay / Gonder)
+pay-sent: "%prefix%&e%player% &7adlı oyuncuya &#00d2ff&l%amount_formatted% &7kristal gönderdiniz."
+pay-received: "%prefix%&e%player% &7size &#00d2ff&l%amount_formatted% &7kristal gönderdi!"
+pay-self-error: "%prefix%&cKendinize kristal gönderemezsiniz!"
+pay-insufficient: "%prefix%&cYetersiz bakiye! Sahip olduğunuz kristal: &e%balance_formatted%"
+
+# Yönetici Komutları
+admin-give-success: "%prefix%&e%player% &7adlı oyuncuya &#00d2ff&l%amount_formatted% &7kristal eklendi. &8(Yeni Bakiye: &b%new_balance_formatted%&8)"
+admin-give-received: "%prefix%&7Hesabınıza bir yetkili tarafından &#00d2ff&l%amount_formatted% &7kristal eklendi!"
+
+admin-take-success: "%prefix%&e%player% &7adlı oyuncudan &#00d2ff&l%amount_formatted% &7kristal alındı. &8(Yeni Bakiye: &b%new_balance_formatted%&8)"
+admin-take-deducted: "%prefix%&7Hesabınızdan &#00d2ff&l%amount_formatted% &7kristal eksiltildi."
+admin-take-insufficient: "%prefix%&cOyuncunun yeterli kristali yok! Mevcut bakiyesi: &e%balance_formatted%"
+
+admin-set-success: "%prefix%&e%player% &7adlı oyuncunun kristali &#00d2ff&l%amount_formatted% &7olarak ayarlandı."
+admin-set-updated: "%prefix%&7Kristal bakiyeniz &#00d2ff&l%amount_formatted% &7olarak güncellendi."
+
+admin-reset-success: "%prefix%&e%player% &7adlı oyuncunun tüm kristal bakiyesi sıfırlandı."
+admin-reset-notified: "%prefix%&cTüm kristal bakiyeniz sıfırlandı!"
+
+reload-success: "%prefix%&aKonfigürasyon ve dil dosyaları başarıyla yenilendi!"
+
+# Sıralama (Top Listesi)
+top-header:
+  - "&8&m----------------------------------------"
+  - "           &#00c6ff&lKRİSTAL SIRALAMASI &7(TOP 10)"
+  - "&8&m----------------------------------------"
+top-line: " &e#%pos% &f%player% &8» &#00d2ff&l%balance_formatted% &7Kristal"
+top-empty: " &7Henüz sıralamada kimse bulunmuyor."
+top-footer:
+  - "&8&m----------------------------------------"
+
+# Yardım Mesajları
+help:
+  header:
+    - "&8&m----------------------------------------"
+    - "           &#00c6ff&lTWINSSHARDS &7KOMUTLARI"
+    - "&8&m----------------------------------------"
+  user-commands:
+    - " &b/kristal &8- &7Kendi kristal bakiyenizi görüntüler."
+    - " &b/kristal bak <oyuncu> &8- &7Başka bir oyuncunun bakiyesine bakar."
+    - " &b/kristal gonder <oyuncu> <miktar> &8- &7Oyuncuya kristal gönderir."
+    - " &b/kristal top &8- &7En çok kristale sahip oyuncuları listeler."
+  admin-commands:
+    - " &6/kristal ver <oyuncu> <miktar> &8- &7Oyuncuya kristal verir."
+    - " &6/kristal al <oyuncu> <miktar> &8- &7Oyuncudan kristal alır."
+    - " &6/kristal ayarla <oyuncu> <miktar> &8- &7Oyuncunun kristalini ayarlar."
+    - " &6/kristal sifirla <oyuncu> &8- &7Oyuncunun kristalini sıfırlar."
+    - " &6/kristal yenile &8- &7Eklenti dosyalarını yeniler."
+  footer:
+    - "&8&m----------------------------------------"

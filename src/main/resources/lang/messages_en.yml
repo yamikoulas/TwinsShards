@@ -1,0 +1,67 @@
+# =======================================================
+#               TwinsShards English Message File
+#   Color codes (&a, &b, etc.) and Hex colors (&#3a7bd5) supported.
+# =======================================================
+
+prefix: "&#00c6ff&lT&#0072ff&lw&#00c6ff&li&#0072ff&ln&#00c6ff&ls&#0072ff&lS&#00c6ff&lh&#0072ff&la&#00c6ff&lr&#0072ff&ld&#00c6ff&ls &8» &r"
+
+no-permission: "%prefix%&cYou do not have permission to execute this command!"
+player-only: "%prefix%&cThis command can only be executed by players!"
+player-not-found: "%prefix%&cPlayer (&e%player%&c) not found!"
+invalid-amount: "%prefix%&cInvalid amount! Please enter a positive number."
+
+# Balance
+balance-self: "%prefix%&7Your Shards Balance: &#00d2ff&l%balance_formatted% &7(&b%balance_commas%&7)"
+balance-other: "%prefix%&e%player%'s &7balance: &#00d2ff&l%balance_formatted% &7(&b%balance_commas%&7)"
+
+# Transfer (Pay)
+pay-sent: "%prefix%&7Sent &#00d2ff&l%amount_formatted% &7shards to &e%player%&7."
+pay-received: "%prefix%&e%player% &7sent you &#00d2ff&l%amount_formatted% &7shards!"
+pay-self-error: "%prefix%&cYou cannot send shards to yourself!"
+pay-insufficient: "%prefix%&cInsufficient funds! You have: &e%balance_formatted%"
+
+# Admin Commands
+admin-give-success: "%prefix%&7Given &#00d2ff&l%amount_formatted% &7shards to &e%player%&7. &8(New: &b%new_balance_formatted%&8)"
+admin-give-received: "%prefix%&7An administrator added &#00d2ff&l%amount_formatted% &7shards to your account!"
+
+admin-take-success: "%prefix%&7Took &#00d2ff&l%amount_formatted% &7shards from &e%player%&7. &8(New: &b%new_balance_formatted%&8)"
+admin-take-deducted: "%prefix%&7Deducted &#00d2ff&l%amount_formatted% &7shards from your account."
+admin-take-insufficient: "%prefix%&cPlayer does not have enough shards! Balance: &e%balance_formatted%"
+
+admin-set-success: "%prefix%&7Set &e%player%'s &7shards balance to &#00d2ff&l%amount_formatted%&7."
+admin-set-updated: "%prefix%&7Your shards balance has been updated to &#00d2ff&l%amount_formatted%&7."
+
+admin-reset-success: "%prefix%&7Reset all shards for &e%player%&7."
+admin-reset-notified: "%prefix%&cYour shards balance has been reset!"
+
+reload-success: "%prefix%&aConfiguration and language files reloaded successfully!"
+
+# Top List
+top-header:
+  - "&8&m----------------------------------------"
+  - "           &#00c6ff&lSHARDS LEADERBOARD &7(TOP 10)"
+  - "&8&m----------------------------------------"
+top-line: " &e#%pos% &f%player% &8» &#00d2ff&l%balance_formatted% &7Shards"
+top-empty: " &7No players on the leaderboard yet."
+top-footer:
+  - "&8&m----------------------------------------"
+
+# Help
+help:
+  header:
+    - "&8&m----------------------------------------"
+    - "           &#00c6ff&lTWINSSHARDS &7COMMANDS"
+    - "&8&m----------------------------------------"
+  user-commands:
+    - " &b/shards &8- &7View your shards balance."
+    - " &b/shards balance <player> &8- &7Check another player's balance."
+    - " &b/shards pay <player> <amount> &8- &7Send shards to a player."
+    - " &b/shards top &8- &7View top shards holders."
+  admin-commands:
+    - " &6/shards give <player> <amount> &8- &7Give shards to a player."
+    - " &6/shards take <player> <amount> &8- &7Take shards from a player."
+    - " &6/shards set <player> <amount> &8- &7Set a player's shards."
+    - " &6/shards reset <player> &8- &7Reset a player's shards."
+    - " &6/shards reload &8- &7Reload plugin configurations."
+  footer:
+    - "&8&m----------------------------------------"

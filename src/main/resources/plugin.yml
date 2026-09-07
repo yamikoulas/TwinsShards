@@ -1,0 +1,53 @@
+name: TwinsShards
+version: 1.0.0
+main: com.twinsshards.TwinsShards
+api-version: '1.20'
+authors: [TwinsShards Team]
+description: Advanced Folia-Supported Shards Economy Plugin
+folia-supported: true
+softdepend: [PlaceholderAPI]
+
+commands:
+  kristal:
+    description: TwinsShards ana komutu
+    usage: /kristal [yardim]
+    aliases: [crystal, kristaller, cr, shards, shard, twinsshards, ts]
+
+permissions:
+  twinsshards.use:
+    description: Kristal miktarını görüntüleme yetkisi
+    default: true
+  twinsshards.pay:
+    description: Kristal gönderme yetkisi
+    default: true
+  twinsshards.top:
+    description: Kristal sıralamasını görüntüleme yetkisi
+    default: true
+  twinsshards.admin:
+    description: Tüm yönetici komutları yetkisi
+    default: op
+  twinsshards.admin.give:
+    description: Kristal verme yetkisi
+    default: op
+  twinsshards.admin.take:
+    description: Kristal alma yetkisi
+    default: op
+  twinsshards.admin.set:
+    description: Kristal ayarlama yetkisi
+    default: op
+  twinsshards.admin.reset:
+    description: Kristal sıfırlama yetkisi
+    default: op
+  twinsshards.admin.reload:
+    description: Eklentiyi yenileme yetkisi
+    default: op
+
+  # Geriye dönük uyumluluk yetkileri
+  magnetickristal.use:
+    default: true
+  magnetickristal.pay:
+    default: true
+  magnetickristal.top:
+    default: true
+  magnetickristal.admin:
+    default: op
